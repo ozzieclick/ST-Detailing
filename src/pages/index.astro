@@ -1,0 +1,17 @@
+---
+import { changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/navbar.astro";
+import i18next, { t } from "i18next";
+const Title = t("site.title")|| "";
+
+changeLanguage("en");
+
+const urlsite = Astro.url.toString()
+---
+
+<Layout  url={urlsite}  imagen="" Title={Title}>
+<Navbar />
+</Layout>
+
+

@@ -1,0 +1,60 @@
+---
+import { SEO } from "astro-seo";
+
+export interface Props {
+       
+        imagen: string;
+		url:string;
+		Title: string;
+		
+}
+
+// const Title = t("site.title")|| "";
+
+
+const { imagen, url, Title } = Astro.props;
+
+import i18next, { t } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import { localizeUrl } from "astro-i18next";
+
+
+---
+
+<!DOCTYPE html>
+<html lang={i18next.language}>
+        <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width" />
+                <link rel="icon" type="image/png" href="https://res.cloudinary.com/djhjo9n7j/image/upload/c_scale,f_auto,h_16,q_100,w_16/v1683139403/LogoST150x150_1_zubovj.png" />
+                <SEO
+      title={Title}
+      description={t("site.description")|| ""}
+      openGraph={{
+        basic: {
+          title: t("site.title")|| "",
+          type: "website",
+          image: imagen,
+          url: localizeUrl(url),
+                  },
+      }}
+        twitter={{
+        card: "summary_large_image",
+        title: t("site.title")|| "",
+        description:t("site.description")|| "",
+        image: imagen,
+  }}
+      />
+	  <HeadHrefLangs />
+
+
+        </head>
+        <body class="bg-blue-100 dark:bg-blue-900 text-blue-900 dark:text-blue-100">
+
+                <slot />
+
+				<h1 class="text-blue-100">{url}</h1>
+        </body>
+</html>
+
+
