@@ -1,15 +1,16 @@
 ---
-import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import Navbar from "../../components/navbar.astro";
-import i18next, { t } from "i18next";
-const Title = t("site.title")|| "";
+import { t, changeLanguage } from "i18next";
 
 changeLanguage("es");
-const urlsite = Astro.url.toString()
+
+const Title = t("layout.meta.title") || "";
+const Description = t("layout.meta.description") || "";
+const urlsite = Astro.url.toString();
 ---
 
-<Layout  url={urlsite}  imagen="" Title={Title}>
+<Layout  url={urlsite}  imagen="" Title={Title} Description={Description}>
 <Navbar />
 </Layout>
 

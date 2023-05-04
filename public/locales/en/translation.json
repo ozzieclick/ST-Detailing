@@ -1,6 +1,16 @@
 {
-    "site": {
-      "title": "My awesome website!",
-      "description": "Here is the description of my awesome website!"
-    }
+  
+  "components": {
+    "navbar":{"button":"Book Me" }
+  },
+
+
+"layout":{"meta": {
+      "title": "Professional Car Detailing in Miami | Mobile Services Available | Paint Correction, Ceramic Coating, Car Wash Detailing",
+      "description": "Looking for high-quality car detailing services in Miami? Our team provides mobile service in Miami, specializing in paint correction, ceramic coating, and car wash detailing. Book your appointment today for a like-new car!"
+                  } 
+          }
+
+ 
 }
+

@@ -1,6 +1,15 @@
 {
-    "site": {
-      "title": "Mi asombroso sitio!",
-      "description": "Aqui esta la descripcion de mi Asombroso Sitios!"
-    }
+
+  "components": {
+    "navbar":{"button":"Agenda una Cita" }
+  },
+
+
+"layout":{"meta": {
+      "title": "Detallado Profesional de Autos en Miami | Servicios a Domicilio | Corrección de Pintura, Revestimiento de Cerámica, Lavado de Autos con maximo Detalle",
+      "description": "Buscas un Servicio de Detallado de Autos de alta calidad en Miami? Nuestro equipo proporciona Servicio a Domicilio en Miami, Somos especialista en Corrección de Pintura, Revestimiento de Cerámica y Lavado de Autos. ¡Reserva tu cita hoy para tener un coche como nuevo!"
+                  } 
+          }
+
+
 }
