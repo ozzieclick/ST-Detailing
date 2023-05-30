@@ -6,9 +6,9 @@ import Var from "../var.json"
 
 ---
 
-<div class="flex sm:h-[124px] h-[84px] bg-zinc-950">
+<div class="absolute right-0 top-[5%] hidden sm:flex sm:h-[15vh] h-[12vh] bg-zinc-950  z-10 bg-opacity-60 w-10/12 border-2 border-sky-500 rounded-l-full ">
 
-    <div class="w-1/3 flex-col">
+    <div class="w-1/3 flex-col ">
 
         <div class="w-full h-1/2 flex items-center justify-center"> <a href={Var.CELULAR_LINK}  class="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:w-8 md:h-8 m-1 md:m-4 text-sky-500" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 1h-8A2.5 2.5 0 0 0 5 3.5v17A2.5 2.5 0 0 0 7.5 23h8a2.5 2.5 0 0 0 2.5-2.5v-17A2.5 2.5 0 0 0 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/></svg><span class="font-bold text-xs md:text-base text-zinc-100">{Var.CELULAR_SHOW}</span></a>    </div>
         <div class="flex items-center justify-center text-sky-500 w-full h-1/2">
@@ -22,9 +22,7 @@ import Var from "../var.json"
 
 
     <div class="w-1/3  my-auto flex items-center justify-center"> 
-        <img src="https://res.cloudinary.com/djhjo9n7j/image/upload/c_scale,f_auto,h_120,q_100,w_120/v1683137257/LogoST_kjtquy.png" alt="Logo Corporativo ST Auto" class=" hidden sm:flex" width="120px" height="120px">
-        <img src="https://res.cloudinary.com/djhjo9n7j/image/upload/c_scale,f_auto,h_120,q_100,w_120/v1683137257/LogoST_kjtquy.png" alt="Logo Corporativo ST Auto" class=" flex sm:hidden" width="80px" height="80px">
-    
+        <img src="https://res.cloudinary.com/djhjo9n7j/image/upload/f_auto,q_100/v1683137257/LogoST_kjtquy.png" alt="Logo Corporativo ST Auto" class=" hidden sm:flex h-[15vh] w-[15vh] "  >  
     </div>
 
 
@@ -40,3 +38,24 @@ import Var from "../var.json"
 
 
 </div>
+
+<div class="absolute right-0 top-0 sm:hidden flex h-[15vh] bg-zinc-950  z-10 bg-opacity-60 w-full   ">
+ 
+<div class="w-1/3 flex">
+    <div class="w-full flex items-center justify-center"> <a href={Var.CELULAR_LINK}  class="flex items-center justify-center "><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 md:w-8 md:h-8 m-1 md:m-4 text-sky-500" viewBox="0 0 24 24"><path fill="currentColor" d="M15.5 1h-8A2.5 2.5 0 0 0 5 3.5v17A2.5 2.5 0 0 0 7.5 23h8a2.5 2.5 0 0 0 2.5-2.5v-17A2.5 2.5 0 0 0 15.5 1zm-4 21c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5zm4.5-4H7V4h9v14z"/></svg><span class="font-bold text-xs md:text-base text-zinc-100">{Var.CELULAR_SHOW}</span></a>    </div>
+ 
+</div>
+
+<div class="w-1/3  my-auto flex items-center justify-center"> 
+    <img src="https://res.cloudinary.com/djhjo9n7j/image/upload/f_auto,q_100/v1683137257/LogoST_kjtquy.png" alt="Logo Corporativo ST Auto" class="flex h-[14vh] w-[14vh] "  >  
+</div>
+
+<div class="w-1/3 flex">
+
+    <div class="w-full flex items-center justify-center"> <LanguageSelector showFlag={true} class="bg-sky-100 text-zinc-950 rounded-l-lg border-2 border-sky-500 " />       </div>
+
+</div>
+</div>
+<div class="flex sm:hidden items-center justify-center absolute top-[15vh] h-[6vh] w-full bg-red-700  bg-opacity-60 rounded-t-xl border-b-2 border-zinc-50 ">
+    
+    <a href="#" class="flex items-center font-bold justify-center text-zinc-50">{Buton_Description}</a></div>

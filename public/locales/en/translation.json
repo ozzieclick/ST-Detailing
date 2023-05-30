@@ -1,7 +1,8 @@
 {
   
   "components": {
-    "navbar":{"button":"Book Me" }
+    "navbar":{"button":"Book Me" }, 
+    "Hero":{"h1":"Welcome to ST Auto", "p":"We Offer high-quality Car Detailing Services in Miami." }
   },
 
 

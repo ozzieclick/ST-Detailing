@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import Navbar from "../components/navbar.astro";
 
 export interface Props {
        
@@ -50,11 +51,11 @@ import { localizeUrl } from "astro-i18next";
 
 
         </head>
-        <body class="bg-blue-100 dark:bg-blue-900 text-blue-900 dark:text-blue-100">
-
+        <body class="bg-zinc-950">
+<Navbar />
                 <slot />
 
-				<h1 class="text-blue-100">{url}</h1>
+				
         </body>
 </html>
 

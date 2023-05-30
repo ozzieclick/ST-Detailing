@@ -1,13 +1,14 @@
 {
 
   "components": {
-    "navbar":{"button":"Agenda una Cita" }
+    "navbar":{"button":"Agenda una Cita" },
+    "Hero":{"h1":"Bienvenido a ST Auto", "p":"Ofrecemos Servicios de Detallado de Autos de calidad en Miami." }
   },
 
 
 "layout":{"meta": {
       "title": "Detallado Profesional de Autos en Miami | Servicios a Domicilio | Corrección de Pintura, Revestimiento de Cerámica, Lavado de Autos con maximo Detalle",
-      "description": "Buscas un Servicio de Detallado de Autos de alta calidad en Miami? Nuestro equipo proporciona Servicio a Domicilio en Miami, Somos especialista en Corrección de Pintura, Revestimiento de Cerámica y Lavado de Autos. ¡Reserva tu cita hoy para tener un coche como nuevo!"
+      "description": "Buscas un Servicio de Detallado de Autos de calidad en Miami? Nuestro equipo proporciona Servicio a Domicilio en Miami, Somos especialista en Corrección de Pintura, Revestimiento de Cerámica y Lavado de Autos. ¡Reserva tu cita hoy para tener un coche como nuevo!"
                   } 
           }
 

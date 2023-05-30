@@ -1,0 +1,34 @@
+---
+import { t, } from "i18next";
+const H1 = t("components.Hero.h1") || "";
+const P = t("components.Hero.p") || "";
+---
+
+<div class="h-[100vh] bg-cover bg-[url('https://res.cloudinary.com/djhjo9n7j/image/upload/f_auto,q_80/v1685479719/Hero-st-tlf_blb0dr.png')] bg-left  bg-mobile-image-mobile sm:bg-cover sm:bg-center sm:bg-[url('https://res.cloudinary.com/djhjo9n7j/image/upload/f_auto,q_80/v1685473187/Hero-st_tsrzkb.jpg')] flex items-center justify-center">
+
+
+
+  <div class="text-center border-t-2 border-zinc-50 absolute bottom-0 bg-zinc-950  bg-opacity-60 w-full py-2">
+        
+        <h1 class="text-5xl font-bold">
+          <span class="text-transparent bg-clip-text animated-text">
+            {H1}
+          </span>
+        </h1>
+        <p class="text-2xl text-white mt-4">{P}</p>
+      </div>
+    </div>
+    <style>
+      @keyframes gradientAnimation {
+        0% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    
+      .animated-text {
+        background-image: conic-gradient(at center top, rgb(17, 24, 39), rgb(243, 244, 246), rgb(17, 24, 39));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientAnimation 3s linear infinite;
+        background-size: 200% auto;
+      }
+    </style>

@@ -1,17 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/navbar.astro";
+import Hero from "../components/Hero.astro";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("en");
 
-const Title = t("layout.meta.title") || "";
-const Description = t("layout.meta.description") || "";
+const titulo = t("layout.meta.title") || "";
+const Descripcion = t("layout.meta.description") || "";
 const urlsite = Astro.url.toString();
 ---
 
-<Layout  url={urlsite}  imagen="" Title={Title} Description={Description}>
-<Navbar />
-</Layout>
+<Layout url={urlsite} imagen="" Title={titulo} Description={Descripcion} >
 
+ <Hero />   
+</Layout>
 
